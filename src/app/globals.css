@@ -19,3 +19,67 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.card {
+  background: #9fe4e4;
+  border-radius: 50px;
+  animation-name: floatIt;
+  animation-iteration-count: infinite;
+  animation-duration: 4000ms;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+.fotolar {
+  border-radius: 50px;
+  animation-name: floatIt2;
+  animation-iteration-count: infinite;
+  animation-duration: 4000ms;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+.btn-apply {
+  background: #9fe4e4;
+  border-color: #9fe4e4;
+  color: black;
+}
+
+.btn-apply:hover {
+  opacity: 0.7;
+  transition: 500ms;
+}
+
+.secme:hover {
+  cursor: pointer;
+}
+
+.arama {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes floatIt {
+  0% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 5% 5%;
+  }
+  100% {
+    translate: 0 0;
+  }
+}
+
+@keyframes floatIt2 {
+  0% {
+    translate: 0 0;
+  }
+  50% {
+    translate: -4% -4%;
+  }
+  100% {
+    translate: 0 0;
+  }
+}
