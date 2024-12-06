@@ -13,8 +13,10 @@ export default async function Home({
 }: {
   searchParams: { [key: string]: string };
 }) {
+  // Await searchParams before accessing its properties
   const { status = "", gender = "" } = await searchParams;
 
+  // Now fetch characters using the status and gender filters
   const characters = await fetchCharacters({ status, gender });
 
   return (
